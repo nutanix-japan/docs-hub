@@ -5,4 +5,14 @@
         <lastmod>2026-04-27</lastmod>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://github.com/nutanix-japan/docs-hub/docs-hub-setup/phase1/</loc>
+        <lastmod>2026-04-27</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://github.com/nutanix-japan/docs-hub/docs-hub-setup/phase2/</loc>
+        <lastmod>2026-04-27</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
 </urlset>

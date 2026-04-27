@@ -30,7 +30,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-multirepo-plugin mike
+        run: pip install mkdocs-materialx mkdocs-multirepo-plugin mike
 
       - name: Configure git for mike
         run: |

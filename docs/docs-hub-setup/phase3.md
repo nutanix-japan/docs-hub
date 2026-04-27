@@ -1,32 +1,27 @@
-## Phase 3 — First Spoke (handle-B/team-nkp)
+## Phase 3 — Complete (Consolidated)
 
-### Step 1: Create the spoke repo
-Go to [github.com/new](https://github.com/new) logged in as **handle-B** and create:
-- **Repo name:** `team-nkp`
-- **Visibility:** Public
-- **Initialize with:** a `README.md`
+### Step 1: Create spoke repo (as handle-B)
+- Go to [github.com/new](https://github.com/new) → create `team-nkp`, Public, initialize with README
 
-***
-
-### Step 2: Clone and set up structure (as handle-B)
+### Step 2: Clone and set up spoke structure (as handle-B)
 ```bash
 git clone https://github.com/handle-B/team-nkp.git
 cd team-nkp
-mkdir -p docs
+mkdir -p docs .github/workflows
 ```
 
-***
-
-### Step 3: Create `mkdocs.yml`
+### Step 3: Create spoke `mkdocs.yml`
 ```yaml
 site_name: NKP Documentation
 docs_dir: docs
 
 theme:
   name: material
-```
 
-***
+nav:
+  - Home: index.md
+```
+> ⚠️ Explicit `nav` is required — the hub's multirepo plugin cannot auto-resolve spoke pages without it.
 
 ### Step 4: Create `docs/index.md`
 ```markdown
@@ -35,15 +30,7 @@ theme:
 Welcome to the NKP team documentation section.
 ```
 
-***
-
-### Step 5: Create the publish workflow
-```bash
-mkdir -p .github/workflows
-```
-
-Create `.github/workflows/publish.yml`:
-
+### Step 5: Create `.github/workflows/publish.yml`
 ```yaml
 name: Publish to Docs Hub
 
@@ -85,45 +72,65 @@ jobs:
             });
 ```
 
-> ⚠️ Replace `handle-A` with your actual GitHub username for the hub.
+### Step 6: Generate PAT (as handle-A)
+- **handle-A** → Settings → Developer Settings → Fine-grained tokens → Generate new token
+- Repository access: `docs-hub` only
+- Permissions: Actions → **Read and Write**
+- Copy token immediately
 
-***
+### Step 7: Store PAT in spoke (as handle-B)
+- `handle-B/team-nkp` → Settings → Secrets and variables → Actions → New secret
+- **Name:** `HUB_DEPLOY_TOKEN` | **Value:** PAT from Step 6
 
-### Step 6: Create the PAT (as handle-A)
-- Go to **handle-A** GitHub account → **Settings → Developer Settings → Personal Access Tokens → Fine-grained tokens → Generate new token**
-- **Resource owner:** handle-A
-- **Repository access:** Only `docs-hub`
-- **Permissions:** Actions → **Read and Write**
-- Copy the token immediately
-
-***
-
-### Step 7: Store PAT in spoke repo (as handle-B)
-- Go to `handle-B/team-nkp` → **Settings → Secrets and variables → Actions → New repository secret**
-- **Name:** `HUB_DEPLOY_TOKEN`
-- **Value:** paste the PAT from Step 6
-
-***
-
-### Step 8: Push spoke content
+### Step 8: Push spoke
 ```bash
 git add .
 git commit -m "feat: initial NKP docs setup"
 git push origin main
 ```
 
+### Step 9: Wire spoke into hub `mkdocs.yml` (as handle-A, in `docs-hub`)
+```yaml
+site_name: Company Docs Hub
+site_url: https://handle-A.github.io/docs-hub/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
+
+nav:
+  - Home: index.md
+  - NKP: "!import https://github.com/handle-B/team-nkp?branch=main"
+
+extra:
+  version:
+    provider: mike
+```
+
+### Step 10: Verify locally then push hub
+```bash
+# In docs-hub
+mkdocs serve          # Confirm NKP tab shows rendered content
+git add mkdocs.yml
+git commit -m "feat: wire NKP spoke into hub nav"
+git push origin main  # Triggers hub CI automatically
+```
+
 ***
 
-### Step 9: Watch the chain reaction
-- Go to `handle-B/team-nkp` → **Actions** → confirm `publish.yml` triggered ✅
-- Go to `handle-A/docs-hub` → **Actions** → confirm `deploy.yml` was triggered by the spoke ✅
+**Outcomes to verify:**
+
+- [ ] Spoke `publish.yml` triggers hub `deploy.yml` on every push to `main` ✅
+- [ ] `mkdocs serve` locally shows NKP tab with rendered spoke content ✅
+- [ ] Live GitHub Pages site shows NKP section correctly ✅
 
 ***
 
-**Confirm these outcomes before Phase 4:**
-- [ ] `team-nkp` repo exists and has `docs/index.md` and `mkdocs.yml`
-- [ ] `publish.yml` visible in Actions tab on spoke repo
-- [ ] `HUB_DEPLOY_TOKEN` secret stored in `team-nkp`
-- [ ] Push to `main` triggered spoke workflow ✅
-- [ ] Hub `deploy.yml` was triggered automatically from spoke ✅
-- [ ] Hub site still live at GitHub Pages URL
+Ready for Phase 4 (versioning with `mike`) whenever you are.

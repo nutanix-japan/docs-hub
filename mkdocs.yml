@@ -14,6 +14,9 @@ plugins:
 
 nav:
   - Home: index.md
+  - Hub and Spoke Setup:
+    - Phase 1 - Hub: docs-hub-setup/phase1.md
+    - Phase 2 - Hub: docs-hub-setup/phase2.md
 
 extra:
   version:

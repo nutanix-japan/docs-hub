@@ -15,12 +15,10 @@ plugins:
   - search
   - multirepo:
       cleanup: true
-      nav_repos:
-        - name: nkp
+      repos:
+        - section: NKP
           import_url: "https://github.com/ariesbabu/team-nkp?branch=main"
-          imports:
-            - docs/*
-            - mkdocs.yml
+
 #
 
 nav:

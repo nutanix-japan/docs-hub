@@ -1,0 +1,20 @@
+site_name: Company Docs Hub
+site_url: https://github.com/nutanix-japan/docs-hub
+
+theme:
+  name: materialx
+  features:
+    - navigation.tabs
+    - navigation.top
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
+
+nav:
+  - Home: index.md
+
+extra:
+  version:
+    provider: mike

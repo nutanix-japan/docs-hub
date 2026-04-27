@@ -37,6 +37,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.dc9e9c2a.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.d7242098.min.css">
+      
     
     
 
@@ -66,7 +69,14 @@
   
   
   
-    <body dir="ltr" data-mx-topbar="glass">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" data-mx-topbar="glass">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -93,7 +103,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Company Docs Hub" class="md-header__button md-logo" aria-label="Company Docs Hub" data-md-component="logo">
       
@@ -122,6 +134,42 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
@@ -146,11 +194,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5.5a3.498 3.498 0 0 1-6.062 2.385l-5.112 3.021a3.5 3.5 0 0 1 0 2.188l5.112 3.021a3.5 3.5 0 1 1-.764 1.29l-5.112-3.02a3.499 3.499 0 1 1-3.843-5.642 3.5 3.5 0 0 1 3.843.872l5.112-3.021A3.5 3.5 0 1 1 20 5.5m-1.5 13a2 2 0 1 0-3.999-.001 2 2 0 0 0 3.999.001m0-13a2 2 0 1 0-3.999-.001A2 2 0 0 0 18.5 5.5M5.5 14a2 2 0 1 0 .001-3.999A2 2 0 0 0 5.5 14"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -170,14 +225,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -246,7 +295,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -749,7 +804,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 2 - Hub
+    Phase 2 - Hub CI
   
 
     
@@ -777,7 +832,7 @@
   <span class="md-ellipsis">
     
   
-    Phase 2 - Spoke
+    Phase 3 - Spoke
   
 
     
@@ -1024,10 +1079,71 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    NKP
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
   
+    <a href="https://github.com/ariesbabu/team-nkp/edit/main/docs/infra_nkp.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ariesbabu/team-nkp/raw/main/docs/infra_nkp.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
   
 
 
@@ -1035,7 +1151,7 @@
 <p>This section will take you through install NKP(Kubernetes) on Nutanix cluster as we will be deploying AI applications on these kubernetes clusters.</p>
 <p>We will use the <a href="https://cluster-api.sigs.k8s.io/">CAPI</a> based deployment of NKP. This will automatically deploy the required infrastructure VMs for the cluster by connecting to Nutanix Cluster APIs. There is no requirement to use Terraform or or other IaC tools to deploy NKP.</p>
 <p>This section will expand to other available Kubernetes implementations on Nutanix.</p>
-<pre><code class="language-mermaid">stateDiagram-v2
+<pre class="mermaid"><code>stateDiagram-v2
     direction LR
 
     state DeployNKP {
@@ -1050,42 +1166,43 @@
 
     PrepWorkstation --&gt; DeployJumpHost 
     DeployJumpHost --&gt; DeployNKP 
-    DeployNKP --&gt; DeployNai : Next section
-</code></pre>
-<p>!!! warning "Deploying NKP Cluster"</p>
-<pre><code>This lab will focus on deploying NKP to host NAI workloads. However, the steps can also be used deploy a custom NKP deployment if that's the aim.
-
-We will only deploy 1 (one) NKP cluster and have the management and workload part in this. For production environments, it is advised to have separate NKP clusters for management and workloads.
-
-Consider using [NKP The Hard Way](../appendix/infra_nkp_hard_way.md) section to create a customized version of your NKP cluster with separate NKP clusters for management and workloads.
-
-Once you have determined the resource requirements for a custom NKP deployment, modify the environment variables and values in the ``.env`` file to suit your resource needs for your NKP cluster.
-</code></pre>
+    DeployNKP --&gt; DeployNai : Next section</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Deploying NKP Cluster</p>
+<p>This lab will focus on deploying NKP to host NAI workloads. However, the steps can also be used deploy a custom NKP deployment if that's the aim.</p>
+<p>We will only deploy 1 (one) NKP cluster and have the management and workload part in this. For production environments, it is advised to have separate NKP clusters for management and workloads.</p>
+<p>Consider using <a href="../appendix/infra_nkp_hard_way.md">NKP The Hard Way</a> section to create a customized version of your NKP cluster with separate NKP clusters for management and workloads.</p>
+<p>Once you have determined the resource requirements for a custom NKP deployment, modify the environment variables and values in the <code>.env</code> file to suit your resource needs for your NKP cluster.</p>
+</div>
 <h2 id="nkp-high-level-cluster-design">NKP High Level Cluster Design</h2>
 <p>The <code>nkpdev</code> cluster will be hosting the LLM model serving endpoints and AI application stack. This cluster and will require a dedicated GPU node pool.</p>
 <h3 id="sizing-requirements">Sizing Requirements</h3>
 <p>Below are the sizing requirements needed to successfully deploy NAI on a NKP Cluster (labeled as <code>nkpdev</code>) and subsequently deploying single LLM inferencing endpoint on NAI using the <code>meta-llama/Meta-Llama-3-8B-Instruct</code> LLM model.</p>
-<p>??? Tip "Calculating GPU Resources Tips"</p>
-<pre><code>The calculations below assume that you're already aware of how much memory is required to load target LLM model.
-
-For a general example:
-
-- To host a 8b(illion) parameter model, multiply the parameter number by 2 to get minimum GPU memory requirments. 
-  e.g. 16GB of GPU memory is required for 8b parameter model.
-
-&gt; So in the case of the `meta-llama/Meta-Llama-3-8B-Instruct` model, you'll need a min. 16 GiB GPU vRAM available
-
-Below are additional sizing consideration "Rule of Thumb" for further calculating min. GPU node resources:
-
-- For each GPU node will have 8 CPU cores, 24 GB of memory, and 300 GB of disk space.
-- For each GPU attached to the node, add 16 GiB of memory.
-- For each endpoint attached to the node, add 8 CPU cores.
-- If a model needs multiple GPUs, ensure all GPUs are attached to the same worker node
-- For resiliency, while running multiple instances of the same endpoint, ensure that the GPUs are on different worker nodes.
-</code></pre>
+<details class="tip">
+<summary>Calculating GPU Resources Tips</summary>
+<p>The calculations below assume that you're already aware of how much memory is required to load target LLM model.</p>
+<p>For a general example:</p>
+<ul>
+<li>To host a 8b(illion) parameter model, multiply the parameter number by 2 to get minimum GPU memory requirments. 
+  e.g. 16GB of GPU memory is required for 8b parameter model.</li>
+</ul>
+<blockquote>
+<p>So in the case of the <code>meta-llama/Meta-Llama-3-8B-Instruct</code> model, you'll need a min. 16 GiB GPU vRAM available</p>
+</blockquote>
+<p>Below are additional sizing consideration "Rule of Thumb" for further calculating min. GPU node resources:</p>
+<ul>
+<li>For each GPU node will have 8 CPU cores, 24 GB of memory, and 300 GB of disk space.</li>
+<li>For each GPU attached to the node, add 16 GiB of memory.</li>
+<li>For each endpoint attached to the node, add 8 CPU cores.</li>
+<li>If a model needs multiple GPUs, ensure all GPUs are attached to the same worker node</li>
+<li>For resiliency, while running multiple instances of the same endpoint, ensure that the GPUs are on different worker nodes.</li>
+</ul>
+</details>
 <p>Since we will be testing with the <code>meta-llama/Meta-Llama-3-8B-Instruct</code> HuggingFace model, we will require a GPU with a min. of 24 GiB GPU vRAM available to support this demo.</p>
-<p>!!! note
-    GPU min. vRAM should be 24 GB, such as NVIDIA L4 Model.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GPU min. vRAM should be 24 GB, such as NVIDIA L4 Model.</p>
+</div>
 <p>Below are minimum requirements for deploying NAI on the NKP Demo Cluster.</p>
 <table>
 <thead>
@@ -1138,16 +1255,19 @@ Below are additional sizing consideration "Rule of Thumb" for further calculatin
 </tr>
 </tbody>
 </table>
-<p>!!! example "Pre-requisites"</p>
-<pre><code>1. Existing Ubuntu Linux jumphost VM. See here for jumphost installation [steps](../infra/infra_jumphost_tofu.md).
-2. [Docker](#setup-docker-on-jumphost) or Podman installed on the jumphost VM
-3. Nutanix PC is at least ``pc.7.5.0.1``
-4. Nutanix AOS is at least ``7.3.0.5``
-5. Download and install NKP ``v2.17`` binary from Nutanix Portal
-6. Find and reserve 3 IPs for control plane and MetalLB access from AHV network
-7. Find GPU details from Nutanix cluster
-8. Create a base image to use with NKP nodes using ``nkp`` command
-</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Pre-requisites</p>
+<ol>
+<li>Existing Ubuntu Linux jumphost VM. See here for jumphost installation <a href="../infra/infra_jumphost_tofu.md">steps</a>.</li>
+<li><a href="#setup-docker-on-jumphost">Docker</a> or Podman installed on the jumphost VM</li>
+<li>Nutanix PC is at least <code>pc.7.5.0.1</code></li>
+<li>Nutanix AOS is at least <code>7.3.0.5</code></li>
+<li>Download and install NKP <code>v2.17</code> binary from Nutanix Portal</li>
+<li>Find and reserve 3 IPs for control plane and MetalLB access from AHV network</li>
+<li>Find GPU details from Nutanix cluster</li>
+<li>Create a base image to use with NKP nodes using <code>nkp</code> command</li>
+</ol>
+</div>
 <h3 id="install-nkp-binaries">Install NKP Binaries</h3>
 <ol>
 <li>Login to <a href="https://portal.nutanix.com/page/downloads?product=nkp">Nutanix Portal</a> using your credentials</li>
@@ -1160,7 +1280,7 @@ Below are additional sizing consideration "Rule of Thumb" for further calculatin
 <p>In <code>VSCode</code> Explorer pane, click on existing <code>$HOME</code> folder</p>
 </li>
 <li>
-<p>Click on <strong>New Folder</strong> :material-folder-plus-outline: name it: <code>nkp</code></p>
+<p>Click on <strong>New Folder</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m7-1v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg></span> name it: <code>nkp</code></p>
 </li>
 <li>
 <p>On <code>VSCode</code> Explorer plane, click the <code>$HOME/nkp</code> folder</p>
@@ -1170,52 +1290,57 @@ Below are additional sizing consideration "Rule of Thumb" for further calculatin
 </li>
 <li>
 <p>Browse to <code>nkp</code> directory</p>
-<p><code>bash
-cd $HOME/nkp</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/nkp
+</span></code></pre></div>
 </li>
 <li>
 <p>Download and extract the NKP binary from the link you copied earlier</p>
-<p>=== "Command"</p>
-<pre><code>```text title="Paste the download URL within double quotes"
-curl -o nkp_v2.17.1_linux_amd64.tar.gz "_paste_download_URL_here"
-```
-</code></pre>
-<p>=== "Sample command"</p>
-<pre><code>```bash
-curl -o nkp_v2.17.1_linux_amd64.tar.gz "https://download.nutanix.com/downloads/nkp/v2.17.1/nkp_v2.17.1_linux_amd64.tar.gz?Expires=1729016864&amp;........"
-```
-</code></pre>
-<p><code>bash
-tar xvfz nkp_v2.17.1_linux_amd64.tar.gz</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Command</label><label for="__tabbed_1_2">Sample command</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><span class="filename">Paste the download URL within double quotes</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl -o nkp_v2.17.1_linux_amd64.tar.gz &quot;_paste_download_URL_here&quot;
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-o<span class="w"> </span>nkp_v2.17.1_linux_amd64.tar.gz<span class="w"> </span><span class="s2">&quot;https://download.nutanix.com/downloads/nkp/v2.17.1/nkp_v2.17.1_linux_amd64.tar.gz?Expires=1729016864&amp;........&quot;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>tar<span class="w"> </span>xvfz<span class="w"> </span>nkp_v2.17.1_linux_amd64.tar.gz
+</span></code></pre></div>
 </li>
 <li>
 <p>Move the <code>nkp</code> binary to a directory that is included in your <code>PATH</code> environment variable</p>
-<p><code>bash
-sudo cp nkp /usr/local/bin/</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>nkp<span class="w"> </span>/usr/local/bin/
+</span></code></pre></div>
 </li>
 <li>
 <p>Verify the <code>nkp</code> binary is installed correctly. Ensure the version is latest</p>
-<p>!!! note</p>
-<pre><code>At the time of writing this lab nkp version is ``v2.17.1``
-</code></pre>
-<p>=== "Command"</p>
-<pre><code>```bash
-nkp version
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text .no-copy }
-$ nkp version
-catalog: v0.8.1
-diagnose: v0.12.0
-imagebuilder: v2.17.1
-kommander: v2.17.1
-konvoy: v2.17.1
-konvoybundlepusher: v2.17.1
-mindthegap: v1.24.0
-nkp: v2.17.1
-```
-</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At the time of writing this lab nkp version is <code>v2.17.1</code></p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Command</label><label for="__tabbed_2_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nkp<span class="w"> </span>version
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$ nkp version
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>catalog: v0.8.1
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>diagnose: v0.12.0
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>imagebuilder: v2.17.1
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>kommander: v2.17.1
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>konvoy: v2.17.1
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>konvoybundlepusher: v2.17.1
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>mindthegap: v1.24.0
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>nkp: v2.17.1
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <h3 id="setup-docker-on-jumphost">Setup Docker on Jumphost</h3>
@@ -1223,27 +1348,29 @@ nkp: v2.17.1
 <ol>
 <li>
 <p>Login to docker on the jumphost</p>
-<p>=== "Command"</p>
-<pre><code> ```bash
- docker login
- ```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code> ```{ .bash .no-copy }
- ~$ docker login
-
- USING WEB-BASED LOGIN
- To sign in with credentials on the command line, use 'docker login -u &lt;username&gt;'
-
- Your one-time device confirmation code is: JXXX-VXXX
- Press ENTER to open your browser or submit your device code here: https://login.docker.com/activate
-
- Waiting for authentication in the browser…
- WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
- Configure a credential helper to remove this warning. See
- https://docs.docker.com/engine/reference/commandline/login/#credential-stores
- ```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Command</label><label for="__tabbed_3_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>login
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash no-copy highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>~$<span class="w"> </span>docker<span class="w"> </span>login
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>USING<span class="w"> </span>WEB-BASED<span class="w"> </span>LOGIN
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>To<span class="w"> </span>sign<span class="w"> </span><span class="k">in</span><span class="w"> </span>with<span class="w"> </span>credentials<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">command</span><span class="w"> </span>line,<span class="w"> </span>use<span class="w"> </span><span class="s1">&#39;docker login -u &lt;username&gt;&#39;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>Your<span class="w"> </span>one-time<span class="w"> </span>device<span class="w"> </span>confirmation<span class="w"> </span>code<span class="w"> </span>is:<span class="w"> </span>JXXX-VXXX
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>Press<span class="w"> </span>ENTER<span class="w"> </span>to<span class="w"> </span>open<span class="w"> </span>your<span class="w"> </span>browser<span class="w"> </span>or<span class="w"> </span>submit<span class="w"> </span>your<span class="w"> </span>device<span class="w"> </span>code<span class="w"> </span>here:<span class="w"> </span>https://login.docker.com/activate
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>Waiting<span class="w"> </span><span class="k">for</span><span class="w"> </span>authentication<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>browser…
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>WARNING!<span class="w"> </span>Your<span class="w"> </span>password<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>stored<span class="w"> </span>unencrypted<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/ubuntu/.docker/config.json.
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>Configure<span class="w"> </span>a<span class="w"> </span>credential<span class="w"> </span>helper<span class="w"> </span>to<span class="w"> </span>remove<span class="w"> </span>this<span class="w"> </span>warning.<span class="w"> </span>See
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Open the docker login URL in a browser after you enter the <code>docker login</code> command.</p>
@@ -1273,36 +1400,38 @@ nkp: v2.17.1
 <ol>
 <li>
 <p>Get the CIDR range for the AHV network(subnet) where the application will be deployed</p>
-<p><code>buttonless title="CIDR example for your Nutanix cluster"
-10.x.x.0/24</code></p>
+<div class="language-text highlight"><span class="filename">CIDR example for your Nutanix cluster</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>10.x.x.0/24
+</span></code></pre></div>
 </li>
 <li>
 <p>From VSC, logon to your jumpbox VM and open Terminal</p>
 </li>
 <li>
 <p>Install <code>nmap</code> tool (if not already done)</p>
-<p><code>bash
-cd $HOME/sol-cnai-infra
-devbox add nmap</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/sol-cnai-infra
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>devbox<span class="w"> </span>add<span class="w"> </span>nmap
+</span></code></pre></div>
 </li>
 <li>
 <p>Find three unused static IP addresses in the subnet</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-nmap -v -sn  &lt;your CIDR&gt;
-```
-</code></pre>
-<p>=== "Sample command"</p>
-<pre><code>```bash 
-nmap -v -sn 10.x.x.0/24
-```
-</code></pre>
-<p><code>text title="Sample output - choose the first three consecutive IPs"
-Nmap scan report for 10.x.x.214 [host down]
-Nmap scan report for 10.x.x.215 [host down]
-Nmap scan report for 10.x.x.216 [host down]
-Nmap scan report for 10.x.x.217
-Host is up (-0.098s latency).</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Command</label><label for="__tabbed_4_2">Sample command</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>nmap<span class="w"> </span>-v<span class="w"> </span>-sn<span class="w">  </span>&lt;your<span class="w"> </span>CIDR&gt;
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>nmap<span class="w"> </span>-v<span class="w"> </span>-sn<span class="w"> </span><span class="m">10</span>.x.x.0/24
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="language-text highlight"><span class="filename">Sample output - choose the first three consecutive IPs</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Nmap scan report for 10.x.x.214 [host down]
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Nmap scan report for 10.x.x.215 [host down]
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Nmap scan report for 10.x.x.216 [host down]
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Nmap scan report for 10.x.x.217
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Host is up (-0.098s latency).
+</span></code></pre></div>
 </li>
 <li>
 <p>Logon to any CVM in your Nutanix cluster and execute the following to add chosen static IPs to the AHV IPAM network</p>
@@ -1310,18 +1439,20 @@ Host is up (-0.098s latency).</code></p>
 <li><strong>Username:</strong> nutanix</li>
 <li><strong>Password:</strong> your Prism Element password </li>
 </ul>
-<p>=== "Command"</p>
-<pre><code>```text
-acli net.add_to_ip_blacklist &lt;your-ipam-ahv-network&gt; \
-ip_list=10.x.x.214,10.x.x.215,10.x.x.216
-```
-</code></pre>
-<p>=== "Sample command"</p>
-<pre><code> ```text
- acli net.add_to_ip_blacklist User1 \
- ip_list=10.x.x.214,10.x.x.215,10.x.x.216
- ```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Command</label><label for="__tabbed_5_2">Sample command</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>acli net.add_to_ip_blacklist &lt;your-ipam-ahv-network&gt; \
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>ip_list=10.x.x.214,10.x.x.215,10.x.x.216
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>acli net.add_to_ip_blacklist User1 \
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>ip_list=10.x.x.214,10.x.x.215,10.x.x.216
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <h3 id="reservation-of-ips">Reservation of IPs</h3>
@@ -1356,384 +1487,390 @@ Reserve the second two IPs for MetalLB distributed load balancer
 </tbody>
 </table>
 <h2 id="create-base-image-for-nkp">Create Base Image for NKP</h2>
-<p>!!! tip "About NKP Base Image OS Version on Nutanix Cluster"</p>
-<pre><code>The base image for NKP is a minimal image that contains the required packages and tools to run the Kubernetes cluster. The base image is used to create the worker node VMs and the control plane VMs.
-
-NKP base image can be ``Rocky Linux 9.4`` image and is part of ``NKP Starter`` license. This image is maintained and supported by Nutanix. The image is updated regularly to include the latest security patches and bug fixes. Customers **should not** modify the base image.
-
-Using ```NKP Pro``` license also offers choice of using ``Ubuntu 24.04`` base image for GPU based workload deployments.
-</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">About NKP Base Image OS Version on Nutanix Cluster</p>
+<p>The base image for NKP is a minimal image that contains the required packages and tools to run the Kubernetes cluster. The base image is used to create the worker node VMs and the control plane VMs.</p>
+<p>NKP base image can be <code>Rocky Linux 9.4</code> image and is part of <code>NKP Starter</code> license. This image is maintained and supported by Nutanix. The image is updated regularly to include the latest security patches and bug fixes. Customers <strong>should not</strong> modify the base image. </p>
+<p>Using <code>NKP Pro</code> license also offers choice of using <code>Ubuntu 24.04</code> base image for GPU based workload deployments.</p>
+</div>
 <p>In this section we will go through creating a base image for all the control plane and worker node VMs on Nutanix. We will use the <code>Ubuntu 24.04</code> image as the base image as we will need GPU support for AI applications. NVIDIA GPU drivers are not yet available for <code>Rocky Linux 9.4</code> base image. </p>
-<p>!!! info "NKP Cloud Support"</p>
-<pre><code>For information about other supported operating systems for Nutanix Kubernetes Platform (NKP), see [NKP Cloud Support](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Kubernetes-Platform-v2_12:Nutanix-Kubernetes-Platform-v2_12).
-</code></pre>
+<div class="admonition info">
+<p class="admonition-title">NKP Cloud Support</p>
+<p>For information about other supported operating systems for Nutanix Kubernetes Platform (NKP), see <a href="https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Kubernetes-Platform-v2_12:Nutanix-Kubernetes-Platform-v2_12">NKP Cloud Support</a>.</p>
+</div>
 <ol>
 <li>
-<p>In VSC Explorer pane, Click on <strong>New Folder</strong> :material-folder-plus-outline:</p>
+<p>In VSC Explorer pane, Click on <strong>New Folder</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.61-.35-1.28-.59-2-.72V8H4v10h9.09c-.05.33-.09.66-.09 1m7-1v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg></span></p>
 </li>
 <li>
 <p>Call the folder <code>nkp</code> under <code>$HOME</code> directory</p>
 </li>
 <li>
-<p>In the <code>nkp</code> folder, click on <strong>New File</strong> :material-file-plus-outline: and create new file with the following name:</p>
-<p><code>bash
-.env</code></p>
+<p>In the <code>nkp</code> folder, click on <strong>New File</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.81 22H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h8l6 6v5.09c-.33-.05-.66-.09-1-.09s-.67.04-1 .09V9h-5V4H6v16h7.09c.12.72.37 1.39.72 2M23 18h-3v-3h-2v3h-3v2h3v3h2v-3h3z"/></svg></span> and create new file with the following name:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>.env
+</span></code></pre></div>
 </li>
 <li>
 <p>Run the following command to generate an new RSA key pair on the jumphost VM. This SSH key pair will be used for authentication between the jumphost and NKP K8S cluster nodes.</p>
-<p>??? tip "Do you have existing SSH key pair?"</p>
-<pre><code>Copy the key pair from your workstation (PC/Mac) to `~/.ssh/` directory on your Jumphost VM.
-
-``` { .bash .no-copy }
-mac/pc $ scp ~/.ssh/id_rsa.pub ubuntu@10.x.x.171:~/.ssh/id_rsa.pub
-mac/pc $ scp ~/.ssh/id_rsa ubuntu@10.x.x.171:~/.ssh/id_rsa
-```
-</code></pre>
-<p><code>bash
-ssh-keygen -t rsa</code></p>
+<details class="tip">
+<summary>Do you have existing SSH key pair?</summary>
+<p>Copy the key pair from your workstation (PC/Mac) to <code>~/.ssh/</code> directory on your Jumphost VM.</p>
+<div class="language-bash no-copy highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>mac/pc<span class="w"> </span>$<span class="w"> </span>scp<span class="w"> </span>~/.ssh/id_rsa.pub<span class="w"> </span>ubuntu@10.x.x.171:~/.ssh/id_rsa.pub
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>mac/pc<span class="w"> </span>$<span class="w"> </span>scp<span class="w"> </span>~/.ssh/id_rsa<span class="w"> </span>ubuntu@10.x.x.171:~/.ssh/id_rsa
+</span></code></pre></div>
+</details>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa
+</span></code></pre></div>
 <p>Accept the default file location as <code>~/.ssh/id_rsa</code></p>
 <p>SSH key pair will stored in the following location:</p>
-<p><code>{ .bash .no-copy }
-~/.ssh/id_rsa.pub 
-~/.ssh/id_rsa</code></p>
+<div class="language-bash no-copy highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>~/.ssh/id_rsa.pub<span class="w"> </span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>~/.ssh/id_rsa
+</span></code></pre></div>
 </li>
 <li>
 <p>Fill the following values inside the <code>.env</code> file</p>
-<p>=== "Template .env"</p>
-<pre><code>```text
-export NUTANIX_USER=_your_nutanix_username
-export NUTANIX_PASSWORD=_your_nutanix_password
-export NUTANIX_ENDPOINT=_your_prism_central_fqdn
-export NUTANIX_CLUSTER=_your_prism_element_cluster_name
-export NUTANIX_SUBNET_NAME=_your_ahv_ipam_network_name
-export STORAGE_CONTAINER=_your_storage_container_nmae
-export SSH_PUBLIC_KEY=_path_to_ssh_pub_key_on_jumphost_vm
-export NKP_CLUSTER_NAME=_your_nkp_cluster_name
-export CONTROLPLANE_VIP=_your_nkp_cluster_controlplane_ip
-export LB_IP_RANGE=_your_range_of_two_ips
-export DOCKER_USERNAME=_your_docker_username
-export DOCKER_PASSWORD=_your_docker_password
-```
-</code></pre>
-<p>=== "Sample .env"</p>
-<pre><code>```text
-export NUTANIX_USER=admin
-export NUTANIX_PASSWORD=xxxxxxxx
-export NUTANIX_ENDPOINT=pc.example.com
-export NUTANIX_CLUSTER=pe
-export NUTANIX_SUBNET_NAME=User1
-export STORAGE_CONTAINER=default
-export SSH_PUBLIC_KEY=$HOME/.ssh/id_rsa.pub
-export NKP_CLUSTER_NAME=nkpdev
-export CONTROLPLANE_VIP=10.x.x.214
-export LB_IP_RANGE=10.x.x.215-10.x.x.216
-export DOCKER_USERNAME=_your_docker_username
-export DOCKER_PASSWORD=_your_docker_password_pat
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Template .env</label><label for="__tabbed_6_2">Sample .env</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>export NUTANIX_USER=_your_nutanix_username
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>export NUTANIX_PASSWORD=_your_nutanix_password
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>export NUTANIX_ENDPOINT=_your_prism_central_fqdn
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>export NUTANIX_CLUSTER=_your_prism_element_cluster_name
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>export NUTANIX_SUBNET_NAME=_your_ahv_ipam_network_name
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>export STORAGE_CONTAINER=_your_storage_container_nmae
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>export SSH_PUBLIC_KEY=_path_to_ssh_pub_key_on_jumphost_vm
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>export NKP_CLUSTER_NAME=_your_nkp_cluster_name
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>export CONTROLPLANE_VIP=_your_nkp_cluster_controlplane_ip
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>export LB_IP_RANGE=_your_range_of_two_ips
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>export DOCKER_USERNAME=_your_docker_username
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>export DOCKER_PASSWORD=_your_docker_password
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>export NUTANIX_USER=admin
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>export NUTANIX_PASSWORD=xxxxxxxx
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>export NUTANIX_ENDPOINT=pc.example.com
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>export NUTANIX_CLUSTER=pe
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>export NUTANIX_SUBNET_NAME=User1
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>export STORAGE_CONTAINER=default
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>export SSH_PUBLIC_KEY=$HOME/.ssh/id_rsa.pub
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>export NKP_CLUSTER_NAME=nkpdev
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>export CONTROLPLANE_VIP=10.x.x.214
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>export LB_IP_RANGE=10.x.x.215-10.x.x.216
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>export DOCKER_USERNAME=_your_docker_username
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>export DOCKER_PASSWORD=_your_docker_password_pat
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Using VSC Terminal, load the environment variables and its values</p>
-<p><code>bash
-source $HOME/nkp/.env</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/nkp/.env
+</span></code></pre></div>
 </li>
 <li>
 <p>Create the base image and upload to Prism Central using the following command. </p>
-<p>!!!note 
-       Image creation will take up to 5 minutes.</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-nkp create image nutanix ubuntu-24.04 \
-  --endpoint ${NUTANIX_ENDPOINT} --cluster ${NUTANIX_CLUSTER} \
-  --subnet ${NUTANIX_SUBNET_NAME} --insecure
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text .no-copy }
-nkp create image nutanix ubuntu-24.04 \ 
---endpoint ${NUTANIX_ENDPOINT} --cluster ${NUTANIX_CLUSTER} \
---subnet ${NUTANIX_SUBNET_NAME} --insecure
-
-&gt; Provisioning and configuring image
-Manifest files extracted to $HOME/nkp/.nkp-image-builder-3243021807
-nutanix.kib_image: output will be in this color.
-
-==&gt; nutanix.kib_image: Creating Packer Builder virtual machine...
-    nutanix.kib_image: Virtual machine export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605 created
-    nutanix.kib_image: Found IP for virtual machine: 10.x.x.234
-==&gt; nutanix.kib_image: Running post-processor: packer-manifest (type manifest)
-
----&gt; 100%
-Build 'nutanix.kib_image' finished after 4 minutes 55 seconds.
-==&gt; Wait completed after 4 minutes 55 seconds
-
-==&gt; Builds finished. The artifacts of successful builds are:
---&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
---&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
-```
-</code></pre>
-<p>!!! info "Image name - This will be different in your environment"</p>
-<pre><code>Note image name from the previous ``nkp`` create image command output
-
-```text hl_lines="2"
-==&gt; Builds finished. The artifacts of successful builds are:
---&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
-```
-</code></pre>
-<p>!!! warning</p>
-<pre><code>Make sure to use image name that is generated in your environment for the next steps.
-</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Image creation will take up to 5 minutes.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Command</label><label for="__tabbed_7_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>nkp<span class="w"> </span>create<span class="w"> </span>image<span class="w"> </span>nutanix<span class="w"> </span>ubuntu-24.04<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span>--endpoint<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_ENDPOINT</span><span class="si">}</span><span class="w"> </span>--cluster<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span>--subnet<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="w"> </span>--insecure
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>nkp create image nutanix ubuntu-24.04 \ 
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>--endpoint ${NUTANIX_ENDPOINT} --cluster ${NUTANIX_CLUSTER} \
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>--subnet ${NUTANIX_SUBNET_NAME} --insecure
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>&gt; Provisioning and configuring image
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>Manifest files extracted to $HOME/nkp/.nkp-image-builder-3243021807
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>nutanix.kib_image: output will be in this color.
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>==&gt; nutanix.kib_image: Creating Packer Builder virtual machine...
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>    nutanix.kib_image: Virtual machine export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605 created
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    nutanix.kib_image: Found IP for virtual machine: 10.x.x.234
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>==&gt; nutanix.kib_image: Running post-processor: packer-manifest (type manifest)
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>---&gt; 100%
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>Build &#39;nutanix.kib_image&#39; finished after 4 minutes 55 seconds.
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>==&gt; Wait completed after 4 minutes 55 seconds
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>==&gt; Builds finished. The artifacts of successful builds are:
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>--&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
+</span><span id="__span-24-20"><a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>--&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Image name - This will be different in your environment</p>
+<p>Note image name from the previous <code>nkp</code> create image command output</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>==&gt; Builds finished. The artifacts of successful builds are:
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="hll">--&gt; nutanix.kib_image: export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
+</span></span></code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to use image name that is generated in your environment for the next steps.</p>
+</div>
 </li>
 <li>
 <p>Populate the <code>.env</code> file with the NKP image name by adding (appending) the following environment variables and save it</p>
-<p>=== "Template .env"</p>
-<pre><code>```text
-export NKP_IMAGE=nkp-image-name
-```
-</code></pre>
-<p>=== "Sample .env"</p>
-<pre><code>```text
-export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Template .env</label><label for="__tabbed_8_2">Sample .env</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>export NKP_IMAGE=nkp-image-name
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>export NKP_IMAGE=nkp-ubuntu-24.04-1.34.3-20260328040605
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <p>We are now ready to install the workload <code>nkpdev</code> cluster</p>
 <h2 id="create-nkp-workload-cluster">Create NKP Workload Cluster</h2>
-<p>!!!warning</p>
-<pre><code>Do not use hyphens ``-`` in the nkp cluster name.
-
-```text title="Clustername Validation Rules"
-a lowercase RFC 1123 subdomain must consist of lower case alphanumeric       │
-│characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com',  │
-│regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')
-```
-</code></pre>
-<p>!!!note</p>
-<pre><code>In this lab the workload cluster will have the Management cluster role as well to reduce resource consumption in a lab environment.
-
-However, for production environments, the ideal design is to have a separate management and workload clusters.
-</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use hyphens <code>-</code> in the nkp cluster name. </p>
+<div class="language-text highlight"><span class="filename">Clustername Validation Rules</span><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>a lowercase RFC 1123 subdomain must consist of lower case alphanumeric       │
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>│characters, &#39;-&#39; or &#39;.&#39;, and must start and end with an alphanumeric character (e.g. &#39;example.com&#39;,  │
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>│regex used for validation is &#39;[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*&#39;)
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this lab the workload cluster will have the Management cluster role as well to reduce resource consumption in a lab environment. </p>
+<p>However, for production environments, the ideal design is to have a separate management and workload clusters. </p>
+</div>
 <ol>
 <li>
 <p>Open .env file in VSC and add (append) the following environment variables to your <code>.env</code> file and save it</p>
-<p>=== "Template .env"</p>
-<pre><code>```text
-export CONTROL_PLANE_REPLICAS=_no_of_control_plane_replicas
-export CONTROL_PLANE_VCPUS=_no_of_control_plane_vcpus
-export CONTROL_PLANE_CORES_PER_VCPU=_no_of_control_plane_cores_per_vcpu
-export CONTROL_PLANE_MEMORY_GIB=_no_of_control_plane_memory_gib
-export WORKER_REPLICAS=_no_of_worker_replicas
-export WORKER_VCPUS=_no_of_worker_vcpus
-export WORKER_CORES_PER_VCPU=_no_of_worker_cores_per_vcpu
-export WORKER_MEMORY_GIB=_no_of_worker_memory_gib
-export CSI_FILESYSTEM=_preferred_filesystem_ext4/xfs
-export CSI_HYPERVISOR_ATTACHED=_true/false
-export DOCKER_USERNAME=_your_docker_username
-export DOCKER_PASSWORD=_your_docker_password
-```
-</code></pre>
-<p>=== "Sample .env"</p>
-<pre><code>```text
-export CONTROL_PLANE_REPLICAS=3
-export CONTROL_PLANE_VCPUS=4
-export CONTROL_PLANE_CORES_PER_VCPU=1
-export CONTROL_PLANE_MEMORY_GIB=16
-export WORKER_REPLICAS=4
-export WORKER_VCPUS=12
-export WORKER_CORES_PER_VCPU=1
-export WORKER_MEMORY_GIB=32
-export CSI_FILESYSTEM=ext4
-export CSI_HYPERVISOR_ATTACHED=true
-export DOCKER_USERNAME=_your_docker_username
-export DOCKER_PASSWORD=_your_docker_password
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Template .env</label><label for="__tabbed_9_2">Sample .env</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>export CONTROL_PLANE_REPLICAS=_no_of_control_plane_replicas
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>export CONTROL_PLANE_VCPUS=_no_of_control_plane_vcpus
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>export CONTROL_PLANE_CORES_PER_VCPU=_no_of_control_plane_cores_per_vcpu
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>export CONTROL_PLANE_MEMORY_GIB=_no_of_control_plane_memory_gib
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>export WORKER_REPLICAS=_no_of_worker_replicas
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>export WORKER_VCPUS=_no_of_worker_vcpus
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>export WORKER_CORES_PER_VCPU=_no_of_worker_cores_per_vcpu
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>export WORKER_MEMORY_GIB=_no_of_worker_memory_gib
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>export CSI_FILESYSTEM=_preferred_filesystem_ext4/xfs
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>export CSI_HYPERVISOR_ATTACHED=_true/false
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>export DOCKER_USERNAME=_your_docker_username
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>export DOCKER_PASSWORD=_your_docker_password
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>export CONTROL_PLANE_REPLICAS=3
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>export CONTROL_PLANE_VCPUS=4
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>export CONTROL_PLANE_CORES_PER_VCPU=1
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>export CONTROL_PLANE_MEMORY_GIB=16
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>export WORKER_REPLICAS=4
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>export WORKER_VCPUS=12
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>export WORKER_CORES_PER_VCPU=1
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>export WORKER_MEMORY_GIB=32
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>export CSI_FILESYSTEM=ext4
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>export CSI_HYPERVISOR_ATTACHED=true
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>export DOCKER_USERNAME=_your_docker_username
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>export DOCKER_PASSWORD=_your_docker_password
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Source the new variables and values to the environment</p>
-<p><code>bash
- source $HOME/nkp/.env</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/nkp/.env
+</span></code></pre></div>
 </li>
 <li>
 <p>In VSC, open Terminal, enter the following command to create the workload cluster</p>
-<p>??? tip "Check your command for correct argument values"</p>
-<pre><code>Run the following command to verify your ``nkp`` command and associated environment variables and values.
-
-```bash
-echo "nkp create cluster nutanix -c ${NKP_CLUSTER_NAME} \
-        --control-plane-endpoint-ip ${CONTROLPLANE_VIP} \
-        --control-plane-prism-element-cluster ${NUTANIX_CLUSTER} \
-        --control-plane-subnets ${NUTANIX_SUBNET_NAME} \
-        --control-plane-vm-image ${NKP_IMAGE} \
-        --csi-storage-container ${STORAGE_CONTAINER} \
-        --endpoint https://${NUTANIX_ENDPOINT}:9440 \
-        --worker-prism-element-cluster ${NUTANIX_CLUSTER} \
-        --worker-subnets ${NUTANIX_SUBNET_NAME} \
-        --worker-vm-image ${NKP_IMAGE} \
-        --ssh-public-key-file ${SSH_PUBLIC_KEY} \
-        --kubernetes-service-load-balancer-ip-range ${LB_IP_RANGE} \
-        --control-plane-disk-size 150 \
-        --control-plane-memory ${CONTROL_PLANE_MEMORY_GIB} \
-        --control-plane-vcpus ${CONTROL_PLANE_VCPUS} \
-        --control-plane-cores-per-vcpu ${CONTROL_PLANE_CORES_PER_VCPU} \
-        --worker-disk-size 150 \
-        --worker-memory ${WORKER_MEMORY_GIB} \
-        --worker-vcpus ${WORKER_VCPUS} \
-        --worker-cores-per-vcpu ${WORKER_CORES_PER_VCPU} \
-        --csi-file-system ${CSI_FILESYSTEM} \
-        --csi-hypervisor-attached-volumes=${CSI_HYPERVISOR_ATTACHED} \
-        --registry-mirror-url "https://registry-1.docker.io" \
-        --registry-mirror-username ${DOCKER_USERNAME} \
-        --registry-mirror-password ${DOCKER_PASSWORD} \
-        --self-managed \
-        --insecure"
-```
-
-If the values are incorrect, add the correct values to ``.env`` and source the  again by running the following command
-
-```bash
-source $HOME/nkp/.env
-```
-
-Then rerun the ``echo nkp`` command to verify the values again before running the ``nkp create cluster nutanix`` command.
-</code></pre>
-<p>=== "Command"</p>
-<pre><code>```bash hl_lines="28"
-nkp create cluster nutanix -c ${NKP_CLUSTER_NAME} \
-    --control-plane-endpoint-ip ${CONTROLPLANE_VIP} \
-    --control-plane-prism-element-cluster ${NUTANIX_CLUSTER} \
-    --control-plane-subnets ${NUTANIX_SUBNET_NAME} \
-    --control-plane-vm-image ${NKP_IMAGE} \
-    --csi-storage-container ${STORAGE_CONTAINER} \
-    --endpoint https://${NUTANIX_ENDPOINT}:9440 \
-    --worker-prism-element-cluster ${NUTANIX_CLUSTER} \
-    --worker-subnets ${NUTANIX_SUBNET_NAME} \
-    --worker-vm-image ${NKP_IMAGE} \
-    --ssh-public-key-file ${SSH_PUBLIC_KEY} \
-    --kubernetes-service-load-balancer-ip-range ${LB_IP_RANGE} \
-    --control-plane-disk-size 150 \
-    --control-plane-memory ${CONTROL_PLANE_MEMORY_GIB} \
-    --control-plane-vcpus ${CONTROL_PLANE_VCPUS} \
-    --control-plane-cores-per-vcpu ${CONTROL_PLANE_CORES_PER_VCPU} \
-    --worker-disk-size 150 \
-    --worker-memory ${WORKER_MEMORY_GIB} \
-    --worker-vcpus ${WORKER_VCPUS} \
-    --worker-cores-per-vcpu ${WORKER_CORES_PER_VCPU} \
-    --csi-file-system ${CSI_FILESYSTEM} \
-    --csi-hypervisor-attached-volumes=${CSI_HYPERVISOR_ATTACHED} \
-    --registry-mirror-url "https://registry-1.docker.io" \
-    --registry-mirror-username ${DOCKER_USERNAME} \
-    --registry-mirror-password ${DOCKER_PASSWORD} \
-    --self-managed \
-    --insecure
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text .no-copy }
-&gt; ✓ Creating a bootstrap cluster 
-✓ Upgrading CAPI components 
-✓ Waiting for CAPI components to be upgraded 
-✓ Initializing new CAPI components 
-✓ Creating ClusterClass resources 
-✓ Creating ClusterClass resources
-&gt; Generating cluster resources
-cluster.cluster.x-k8s.io/nkpdev created
-secret/nkpdev-pc-credentials created
-secret/nkpdev-pc-credentials-for-csi created
-secret/nkpdev-image-registry-credentials created
-✓ Waiting for cluster infrastructure to be ready 
-✓ Waiting for cluster control-planes to be ready 
-✓ Waiting for machines to be ready
-✓ Initializing new CAPI components 
-✓ Creating ClusterClass resources 
-✓ Moving cluster resources
-
-&gt; You can now view resources in the moved cluster by using the --kubeconfig flag with kubectl.
-For example: kubectl --kubeconfig="$HOME/nkp/nkpdev.conf" get nodes
-
-&gt; ✓ Deleting bootstrap cluster
-
-Cluster default/nkpdev kubeconfig was written to to the filesystem.
-You can now view resources in the new cluster by using the --kubeconfig flag with kubectl.
-For example: kubectl --kubeconfig="$HOME/nkp/nkpdev.conf" get nodes
-
-&gt; Starting kommander installation
-✓ Deploying Flux 
-✓ Deploying Ingress certificate 
-✓ Creating kommander-overrides ConfigMap
-✓ Deploying Git Operator 
-✓ Creating GitClaim for management GitRepository 
-✓ Creating GitClaimUser for accessing management GitRepository 
-✓ Creating HTTP Proxy configuration
-✓ Deploying Flux configuration
-✓ Deploying Kommander Operator 
-✓ Creating KommanderCore resource 
-✓ Cleaning up kommander bootstrap resources
-✓ Deploying Substitution variables
-✓ Deploying Flux configuration 
-✓ Deploying Gatekeeper 
-✓ Deploying Kommander AppManagement 
-✓ Creating Core AppDeployments 
-✓ 4 out of 12 core applications have been installed (waiting for dex, dex-k8s-authenticator and 6 more) 
-✓ 5 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander and 5 more) 
-✓ 7 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander and 3 more) 
-✓ 8 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander-ui and 2 more) 
-✓ 9 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander-ui and 1 more) 
-✓ 10 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, traefik-forward-auth-mgmt) 
-✓ 11 out of 12 core applications have been installed (waiting for traefik-forward-auth-mgmt) 
-✓ Creating cluster-admin credentials
-
-&gt; Cluster was created successfully! Get the dashboard details with:
-&gt; nkp get dashboard --kubeconfig="$HOME/nkp/nkpdev.conf"
-```
-</code></pre>
-<p>!!! info "What is a Self-Manged Cluster?"</p>
-<pre><code>The ``--self-managed`` argument of the ``nkp create cluster nutanix`` command will deploy bootstrap, and Kommander management automatically.
-
-The appendix section has information on how to deploy a cluster without using the ``--self-managed`` option.
-
-Usually preferred by customer DevOps teams to have more control over the deployment process. This way the customer can do the following:
-
-- Deploy bootstrap (``Kind``) cluster
-- Deploy NKP Management cluster
-- Choose to migrate the CAPI components over to NKP Management cluster
-- Choose to customize Kommander Managment component instllation
-- Choose to deploy workload clusters from NKP Kommander GUI or
-- Choose to deploy workload clusters using scripts to automate the process
-
-See [NKP the Hard Way](../appendix/infra_nkp_hard_way.md) section for more information for customizable NKP cluster deployments.
-</code></pre>
+<details class="tip">
+<summary>Check your command for correct argument values</summary>
+<p>Run the following command to verify your <code>nkp</code> command and associated environment variables and values.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;nkp create cluster nutanix -c </span><span class="si">${</span><span class="nv">NKP_CLUSTER_NAME</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="s2">        --control-plane-endpoint-ip </span><span class="si">${</span><span class="nv">CONTROLPLANE_VIP</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="s2">        --control-plane-prism-element-cluster </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="s2">        --control-plane-subnets </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="s2">        --control-plane-vm-image </span><span class="si">${</span><span class="nv">NKP_IMAGE</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="s2">        --csi-storage-container </span><span class="si">${</span><span class="nv">STORAGE_CONTAINER</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="s2">        --endpoint https://</span><span class="si">${</span><span class="nv">NUTANIX_ENDPOINT</span><span class="si">}</span><span class="s2">:9440 \</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="s2">        --worker-prism-element-cluster </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="s2">        --worker-subnets </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="s2">        --worker-vm-image </span><span class="si">${</span><span class="nv">NKP_IMAGE</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="s2">        --ssh-public-key-file </span><span class="si">${</span><span class="nv">SSH_PUBLIC_KEY</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="s2">        --kubernetes-service-load-balancer-ip-range </span><span class="si">${</span><span class="nv">LB_IP_RANGE</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="s2">        --control-plane-disk-size 150 \</span>
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="s2">        --control-plane-memory </span><span class="si">${</span><span class="nv">CONTROL_PLANE_MEMORY_GIB</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a><span class="s2">        --control-plane-vcpus </span><span class="si">${</span><span class="nv">CONTROL_PLANE_VCPUS</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a><span class="s2">        --control-plane-cores-per-vcpu </span><span class="si">${</span><span class="nv">CONTROL_PLANE_CORES_PER_VCPU</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a><span class="s2">        --worker-disk-size 150 \</span>
+</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a><span class="s2">        --worker-memory </span><span class="si">${</span><span class="nv">WORKER_MEMORY_GIB</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-19"><a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a><span class="s2">        --worker-vcpus </span><span class="si">${</span><span class="nv">WORKER_VCPUS</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-20"><a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a><span class="s2">        --worker-cores-per-vcpu </span><span class="si">${</span><span class="nv">WORKER_CORES_PER_VCPU</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-21"><a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a><span class="s2">        --csi-file-system </span><span class="si">${</span><span class="nv">CSI_FILESYSTEM</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-22"><a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a><span class="s2">        --csi-hypervisor-attached-volumes=</span><span class="si">${</span><span class="nv">CSI_HYPERVISOR_ATTACHED</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-23"><a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a><span class="s2">        --registry-mirror-url &quot;</span>https://registry-1.docker.io<span class="s2">&quot; \</span>
+</span><span id="__span-32-24"><a id="__codelineno-32-24" name="__codelineno-32-24" href="#__codelineno-32-24"></a><span class="s2">        --registry-mirror-username </span><span class="si">${</span><span class="nv">DOCKER_USERNAME</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-25"><a id="__codelineno-32-25" name="__codelineno-32-25" href="#__codelineno-32-25"></a><span class="s2">        --registry-mirror-password </span><span class="si">${</span><span class="nv">DOCKER_PASSWORD</span><span class="si">}</span><span class="s2"> \</span>
+</span><span id="__span-32-26"><a id="__codelineno-32-26" name="__codelineno-32-26" href="#__codelineno-32-26"></a><span class="s2">        --self-managed \</span>
+</span><span id="__span-32-27"><a id="__codelineno-32-27" name="__codelineno-32-27" href="#__codelineno-32-27"></a><span class="s2">        --insecure&quot;</span>
+</span></code></pre></div>
+<p>If the values are incorrect, add the correct values to <code>.env</code> and source the  again by running the following command</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/nkp/.env
+</span></code></pre></div>
+<p>Then rerun the <code>echo nkp</code> command to verify the values again before running the <code>nkp create cluster nutanix</code> command.</p>
+</details>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Command</label><label for="__tabbed_10_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>nkp<span class="w"> </span>create<span class="w"> </span>cluster<span class="w"> </span>nutanix<span class="w"> </span>-c<span class="w"> </span><span class="si">${</span><span class="nv">NKP_CLUSTER_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span>--control-plane-endpoint-ip<span class="w"> </span><span class="si">${</span><span class="nv">CONTROLPLANE_VIP</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span>--control-plane-prism-element-cluster<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span>--control-plane-subnets<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="w">    </span>--control-plane-vm-image<span class="w"> </span><span class="si">${</span><span class="nv">NKP_IMAGE</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="w">    </span>--csi-storage-container<span class="w"> </span><span class="si">${</span><span class="nv">STORAGE_CONTAINER</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="w">    </span>--endpoint<span class="w"> </span>https://<span class="si">${</span><span class="nv">NUTANIX_ENDPOINT</span><span class="si">}</span>:9440<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="w">    </span>--worker-prism-element-cluster<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="w">    </span>--worker-subnets<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="w">    </span>--worker-vm-image<span class="w"> </span><span class="si">${</span><span class="nv">NKP_IMAGE</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="w">    </span>--ssh-public-key-file<span class="w"> </span><span class="si">${</span><span class="nv">SSH_PUBLIC_KEY</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="w">    </span>--kubernetes-service-load-balancer-ip-range<span class="w"> </span><span class="si">${</span><span class="nv">LB_IP_RANGE</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="w">    </span>--control-plane-disk-size<span class="w"> </span><span class="m">150</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="w">    </span>--control-plane-memory<span class="w"> </span><span class="si">${</span><span class="nv">CONTROL_PLANE_MEMORY_GIB</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a><span class="w">    </span>--control-plane-vcpus<span class="w"> </span><span class="si">${</span><span class="nv">CONTROL_PLANE_VCPUS</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="w">    </span>--control-plane-cores-per-vcpu<span class="w"> </span><span class="si">${</span><span class="nv">CONTROL_PLANE_CORES_PER_VCPU</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-17"><a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a><span class="w">    </span>--worker-disk-size<span class="w"> </span><span class="m">150</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-18"><a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a><span class="w">    </span>--worker-memory<span class="w"> </span><span class="si">${</span><span class="nv">WORKER_MEMORY_GIB</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-19"><a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a><span class="w">    </span>--worker-vcpus<span class="w"> </span><span class="si">${</span><span class="nv">WORKER_VCPUS</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-20"><a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a><span class="w">    </span>--worker-cores-per-vcpu<span class="w"> </span><span class="si">${</span><span class="nv">WORKER_CORES_PER_VCPU</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-21"><a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a><span class="w">    </span>--csi-file-system<span class="w"> </span><span class="si">${</span><span class="nv">CSI_FILESYSTEM</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-22"><a id="__codelineno-34-22" name="__codelineno-34-22" href="#__codelineno-34-22"></a><span class="w">    </span>--csi-hypervisor-attached-volumes<span class="o">=</span><span class="si">${</span><span class="nv">CSI_HYPERVISOR_ATTACHED</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-23"><a id="__codelineno-34-23" name="__codelineno-34-23" href="#__codelineno-34-23"></a><span class="w">    </span>--registry-mirror-url<span class="w"> </span><span class="s2">&quot;https://registry-1.docker.io&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-24"><a id="__codelineno-34-24" name="__codelineno-34-24" href="#__codelineno-34-24"></a><span class="w">    </span>--registry-mirror-username<span class="w"> </span><span class="si">${</span><span class="nv">DOCKER_USERNAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-25"><a id="__codelineno-34-25" name="__codelineno-34-25" href="#__codelineno-34-25"></a><span class="w">    </span>--registry-mirror-password<span class="w"> </span><span class="si">${</span><span class="nv">DOCKER_PASSWORD</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-26"><a id="__codelineno-34-26" name="__codelineno-34-26" href="#__codelineno-34-26"></a><span class="w">    </span>--self-managed<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-34-27"><a id="__codelineno-34-27" name="__codelineno-34-27" href="#__codelineno-34-27"></a><span class="w">    </span>--insecure
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>&gt; ✓ Creating a bootstrap cluster 
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>✓ Upgrading CAPI components 
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>✓ Waiting for CAPI components to be upgraded 
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>✓ Initializing new CAPI components 
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>✓ Creating ClusterClass resources 
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>✓ Creating ClusterClass resources
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>&gt; Generating cluster resources
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>cluster.cluster.x-k8s.io/nkpdev created
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a>secret/nkpdev-pc-credentials created
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>secret/nkpdev-pc-credentials-for-csi created
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>secret/nkpdev-image-registry-credentials created
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a>✓ Waiting for cluster infrastructure to be ready 
+</span><span id="__span-35-13"><a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a>✓ Waiting for cluster control-planes to be ready 
+</span><span id="__span-35-14"><a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a>✓ Waiting for machines to be ready
+</span><span id="__span-35-15"><a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a>✓ Initializing new CAPI components 
+</span><span id="__span-35-16"><a id="__codelineno-35-16" name="__codelineno-35-16" href="#__codelineno-35-16"></a>✓ Creating ClusterClass resources 
+</span><span id="__span-35-17"><a id="__codelineno-35-17" name="__codelineno-35-17" href="#__codelineno-35-17"></a>✓ Moving cluster resources
+</span><span id="__span-35-18"><a id="__codelineno-35-18" name="__codelineno-35-18" href="#__codelineno-35-18"></a>
+</span><span id="__span-35-19"><a id="__codelineno-35-19" name="__codelineno-35-19" href="#__codelineno-35-19"></a>&gt; You can now view resources in the moved cluster by using the --kubeconfig flag with kubectl.
+</span><span id="__span-35-20"><a id="__codelineno-35-20" name="__codelineno-35-20" href="#__codelineno-35-20"></a>For example: kubectl --kubeconfig=&quot;$HOME/nkp/nkpdev.conf&quot; get nodes
+</span><span id="__span-35-21"><a id="__codelineno-35-21" name="__codelineno-35-21" href="#__codelineno-35-21"></a>
+</span><span id="__span-35-22"><a id="__codelineno-35-22" name="__codelineno-35-22" href="#__codelineno-35-22"></a>&gt; ✓ Deleting bootstrap cluster 
+</span><span id="__span-35-23"><a id="__codelineno-35-23" name="__codelineno-35-23" href="#__codelineno-35-23"></a>
+</span><span id="__span-35-24"><a id="__codelineno-35-24" name="__codelineno-35-24" href="#__codelineno-35-24"></a>Cluster default/nkpdev kubeconfig was written to to the filesystem.
+</span><span id="__span-35-25"><a id="__codelineno-35-25" name="__codelineno-35-25" href="#__codelineno-35-25"></a>You can now view resources in the new cluster by using the --kubeconfig flag with kubectl.
+</span><span id="__span-35-26"><a id="__codelineno-35-26" name="__codelineno-35-26" href="#__codelineno-35-26"></a>For example: kubectl --kubeconfig=&quot;$HOME/nkp/nkpdev.conf&quot; get nodes
+</span><span id="__span-35-27"><a id="__codelineno-35-27" name="__codelineno-35-27" href="#__codelineno-35-27"></a>
+</span><span id="__span-35-28"><a id="__codelineno-35-28" name="__codelineno-35-28" href="#__codelineno-35-28"></a>&gt; Starting kommander installation
+</span><span id="__span-35-29"><a id="__codelineno-35-29" name="__codelineno-35-29" href="#__codelineno-35-29"></a>✓ Deploying Flux 
+</span><span id="__span-35-30"><a id="__codelineno-35-30" name="__codelineno-35-30" href="#__codelineno-35-30"></a>✓ Deploying Ingress certificate 
+</span><span id="__span-35-31"><a id="__codelineno-35-31" name="__codelineno-35-31" href="#__codelineno-35-31"></a>✓ Creating kommander-overrides ConfigMap
+</span><span id="__span-35-32"><a id="__codelineno-35-32" name="__codelineno-35-32" href="#__codelineno-35-32"></a>✓ Deploying Git Operator 
+</span><span id="__span-35-33"><a id="__codelineno-35-33" name="__codelineno-35-33" href="#__codelineno-35-33"></a>✓ Creating GitClaim for management GitRepository 
+</span><span id="__span-35-34"><a id="__codelineno-35-34" name="__codelineno-35-34" href="#__codelineno-35-34"></a>✓ Creating GitClaimUser for accessing management GitRepository 
+</span><span id="__span-35-35"><a id="__codelineno-35-35" name="__codelineno-35-35" href="#__codelineno-35-35"></a>✓ Creating HTTP Proxy configuration
+</span><span id="__span-35-36"><a id="__codelineno-35-36" name="__codelineno-35-36" href="#__codelineno-35-36"></a>✓ Deploying Flux configuration
+</span><span id="__span-35-37"><a id="__codelineno-35-37" name="__codelineno-35-37" href="#__codelineno-35-37"></a>✓ Deploying Kommander Operator 
+</span><span id="__span-35-38"><a id="__codelineno-35-38" name="__codelineno-35-38" href="#__codelineno-35-38"></a>✓ Creating KommanderCore resource 
+</span><span id="__span-35-39"><a id="__codelineno-35-39" name="__codelineno-35-39" href="#__codelineno-35-39"></a>✓ Cleaning up kommander bootstrap resources
+</span><span id="__span-35-40"><a id="__codelineno-35-40" name="__codelineno-35-40" href="#__codelineno-35-40"></a>✓ Deploying Substitution variables
+</span><span id="__span-35-41"><a id="__codelineno-35-41" name="__codelineno-35-41" href="#__codelineno-35-41"></a>✓ Deploying Flux configuration 
+</span><span id="__span-35-42"><a id="__codelineno-35-42" name="__codelineno-35-42" href="#__codelineno-35-42"></a>✓ Deploying Gatekeeper 
+</span><span id="__span-35-43"><a id="__codelineno-35-43" name="__codelineno-35-43" href="#__codelineno-35-43"></a>✓ Deploying Kommander AppManagement 
+</span><span id="__span-35-44"><a id="__codelineno-35-44" name="__codelineno-35-44" href="#__codelineno-35-44"></a>✓ Creating Core AppDeployments 
+</span><span id="__span-35-45"><a id="__codelineno-35-45" name="__codelineno-35-45" href="#__codelineno-35-45"></a>✓ 4 out of 12 core applications have been installed (waiting for dex, dex-k8s-authenticator and 6 more) 
+</span><span id="__span-35-46"><a id="__codelineno-35-46" name="__codelineno-35-46" href="#__codelineno-35-46"></a>✓ 5 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander and 5 more) 
+</span><span id="__span-35-47"><a id="__codelineno-35-47" name="__codelineno-35-47" href="#__codelineno-35-47"></a>✓ 7 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander and 3 more) 
+</span><span id="__span-35-48"><a id="__codelineno-35-48" name="__codelineno-35-48" href="#__codelineno-35-48"></a>✓ 8 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander-ui and 2 more) 
+</span><span id="__span-35-49"><a id="__codelineno-35-49" name="__codelineno-35-49" href="#__codelineno-35-49"></a>✓ 9 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, kommander-ui and 1 more) 
+</span><span id="__span-35-50"><a id="__codelineno-35-50" name="__codelineno-35-50" href="#__codelineno-35-50"></a>✓ 10 out of 12 core applications have been installed (waiting for dex-k8s-authenticator, traefik-forward-auth-mgmt) 
+</span><span id="__span-35-51"><a id="__codelineno-35-51" name="__codelineno-35-51" href="#__codelineno-35-51"></a>✓ 11 out of 12 core applications have been installed (waiting for traefik-forward-auth-mgmt) 
+</span><span id="__span-35-52"><a id="__codelineno-35-52" name="__codelineno-35-52" href="#__codelineno-35-52"></a>✓ Creating cluster-admin credentials
+</span><span id="__span-35-53"><a id="__codelineno-35-53" name="__codelineno-35-53" href="#__codelineno-35-53"></a>
+</span><span id="__span-35-54"><a id="__codelineno-35-54" name="__codelineno-35-54" href="#__codelineno-35-54"></a>&gt; Cluster was created successfully! Get the dashboard details with:
+</span><span id="__span-35-55"><a id="__codelineno-35-55" name="__codelineno-35-55" href="#__codelineno-35-55"></a>&gt; nkp get dashboard --kubeconfig=&quot;$HOME/nkp/nkpdev.conf&quot;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">What is a Self-Manged Cluster?</p>
+<p>The <code>--self-managed</code> argument of the <code>nkp create cluster nutanix</code> command will deploy bootstrap, and Kommander management automatically. </p>
+<p>The appendix section has information on how to deploy a cluster without using the <code>--self-managed</code> option. </p>
+<p>Usually preferred by customer DevOps teams to have more control over the deployment process. This way the customer can do the following:</p>
+<ul>
+<li>Deploy bootstrap (<code>Kind</code>) cluster</li>
+<li>Deploy NKP Management cluster</li>
+<li>Choose to migrate the CAPI components over to NKP Management cluster</li>
+<li>Choose to customize Kommander Managment component instllation</li>
+<li>Choose to deploy workload clusters from NKP Kommander GUI or</li>
+<li>Choose to deploy workload clusters using scripts to automate the process</li>
+</ul>
+<p>See <a href="../appendix/infra_nkp_hard_way.md">NKP the Hard Way</a> section for more information for customizable NKP cluster deployments. </p>
+</div>
 </li>
 <li>
 <p>Observe the events in the shell and in Prism Central events</p>
 </li>
 <li>
 <p>Store kubeconfig file for <code>nkpdev</code> cluster</p>
-<p><code>bash
-export KUBECONFIG=$HOME/nkp/nkpdev.conf</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">KUBECONFIG</span><span class="o">=</span><span class="nv">$HOME</span>/nkp/nkpdev.conf
+</span></code></pre></div>
 </li>
 <li>
 <p>Confirm the access to <code>nkpdev</code> cluster</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-kubectl get nodes
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```bash
-$ kubectl get nodes
-#
-NAME                                    STATUS   ROLES           AGE   VERSION
-nkpdev-khgxl-gs8dz                      Ready    control-plane   24h   v1.34.1
-nkpdev-khgxl-nrkn6                      Ready    control-plane   24h   v1.34.1
-nkpdev-khgxl-qmnq8                      Ready    control-plane   24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-5m9td           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-ghrtp           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-hl2cw           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-xrz9v           Ready    &lt;none&gt;          24h   v1.34.1
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Command</label><label for="__tabbed_11_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>$<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="c1">#</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>NAME<span class="w">                                    </span>STATUS<span class="w">   </span>ROLES<span class="w">           </span>AGE<span class="w">   </span>VERSION
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>nkpdev-khgxl-gs8dz<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>nkpdev-khgxl-nrkn6<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>nkpdev-khgxl-qmnq8<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>nkpdev-md-0-tnx7k-wcbsf-5m9td<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>nkpdev-md-0-tnx7k-wcbsf-ghrtp<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>nkpdev-md-0-tnx7k-wcbsf-hl2cw<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>nkpdev-md-0-tnx7k-wcbsf-xrz9v<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <h2 id="licensing">Licensing</h2>
@@ -1741,17 +1878,17 @@ nkpdev-md-0-tnx7k-wcbsf-xrz9v           Ready    &lt;none&gt;          24h   v1.
 <p>For example, in the <a href="#sizing-requirements">Sizing Requirements</a> section, the NKP Demo Cluster <code>Total vCPU count</code> is equal to <code>60</code>, whereas the actual worker nodes total vCPU count is only <code>48</code>.</p>
 <h4 id="generate-nkp-pro-license">Generate NKP Pro License</h4>
 <p>To generate a NKP Pro License for the NKP cluster:</p>
-<p>!!! note</p>
-<pre><code>Nutanix Internal users should logon using Nutanix SSO
-
-Nutanix Partners/Customers should logon to Portal using their Nutanix Portal account credentials
-</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nutanix Internal users should logon using Nutanix SSO</p>
+<p>Nutanix Partners/Customers should logon to Portal using their Nutanix Portal account credentials</p>
+</div>
 <ol>
 <li>Login to <a href="https://portal.nutanix.com/page/licensing">Nutanix Portal</a> using your credentials</li>
 <li>Go to <strong>Licensing</strong> &gt; <strong>License Summary</strong></li>
-<li>Click on the small drop down arrow :material-chevron-down: on Manage Licenses and choose Nutanix Kubernetes Platform (NKP)</li>
+<li>Click on the small drop down arrow <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6z"/></svg></span> on Manage Licenses and choose Nutanix Kubernetes Platform (NKP)</li>
 <li>Input the NKP cluster name</li>
-<li>Click on the plus icon :material-plus:</li>
+<li>Click on the plus icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg></span></li>
 <li>Click on <strong>Next</strong> in the bottom right corner</li>
 <li>Select NKP Pro License</li>
 <li>Select Apply to cluster</li>
@@ -1765,20 +1902,22 @@ Nutanix Partners/Customers should logon to Portal using their Nutanix Portal acc
 <ol>
 <li>
 <p>Login to the Kommander URL for <code>nkpdev</code> cluster with the generated credentials that was generated in the previous <a href="../infra/infra_nkp.md#create-nkp-workload-cluster">section</a>. The following commands will give you the credentials and URL.</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-nkp get dashboard
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .bash .no-copy }
-nkp get dashboard
-
-Username: recursing_xxxxxxxxx
-Password: YHbPsslIDB7p7rqwnfxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-URL: https://10.x.x.215/dkp/kommander/dashboard
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Command</label><label for="__tabbed_12_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>nkp<span class="w"> </span>get<span class="w"> </span>dashboard
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash no-copy highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>nkp<span class="w"> </span>get<span class="w"> </span>dashboard
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>Username:<span class="w"> </span>recursing_xxxxxxxxx
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>Password:<span class="w"> </span>YHbPsslIDB7p7rqwnfxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>URL:<span class="w"> </span>https://10.x.x.215/dkp/kommander/dashboard
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Go to <strong>Licensing</strong> and click on <strong>Remove License</strong> to remove the Starter license</p>
@@ -1790,21 +1929,24 @@ URL: https://10.x.x.215/dkp/kommander/dashboard
 <li>The license will be applied to the cluster and the license status will reflect NKP Pro in the top right corner of the dashboard</li>
 </ol>
 <h2 id="add-nkp-gpu-workload-pool">Add NKP GPU Workload Pool</h2>
-<p>!!!tip "CPU only LLM Hosting"</p>
-<pre><code>Enabling GPU and NVIDIA GPU Operator in NKP is not essential for NAI ``v2.3``
-
-NAI ``v2.3`` can host LLM up to 7 billion parameters on CPU
-</code></pre>
-<p>!!!warning</p>
-<pre><code>Skip this section if no GPUs are required
-</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">CPU only LLM Hosting</p>
+<p>Enabling GPU and NVIDIA GPU Operator in NKP is not essential for NAI <code>v2.3</code></p>
+<p>NAI <code>v2.3</code> can host LLM up to 7 billion parameters on CPU</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Skip this section if no GPUs are required</p>
+</div>
 <p>The steps below covers the following:
     - Retrieving and Applying NKP Pro License
     - Identifying the GPU device name
     - Deploying the GPU nodepool
     - Enabling the NVIDIA GPU Operator</p>
-<p>!!! note
-    To Enable the GPU Operator afterwards using the NKP Marketplace, a minimal NKP Pro license is required.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To Enable the GPU Operator afterwards using the NKP Marketplace, a minimal NKP Pro license is required.</p>
+</div>
 <h3 id="find-gpu-device-details">Find GPU Device Details</h3>
 <p>As we will be deploying Nutanix Enterprise AI (NAI) in the next section, we need to find the GPU details beforehand.</p>
 <p>Find the details of GPU on the Nutanix cluster while still connected to Prism Central (PC).</p>
@@ -1825,129 +1967,133 @@ NAI ``v2.3`` can host LLM up to 7 billion parameters on CPU
 <ol>
 <li>
 <p>Open .env file in VSC and add (append) the following environment variables to your <code>.env</code> file and save it</p>
-<p>=== "Template .env"</p>
-<pre><code>```text
-export GPU_NAME=_name_of_gpu_device_
-export GPU_REPLICA_COUNT=_no_of_gpu_worker_nodes
-export GPU_POOL=_name_of_gpu_pool
-export GPU_NODE_VCPUS=_no_of_gpu_node_vcpus
-export GPU_NODE_CORES_PER_VCPU=_per_gpu_node_cores_per_vcpu
-export GPU_NODE_MEMORY_GIB=_per_gpu_node_memory_gib
-export GPU_NODE_DISK_SIZE_GIB=_per_gpu_node_memory_gib
-```
-</code></pre>
-<p>=== "Sample .env"</p>
-<pre><code>```text
-export GPU_NAME="Lovelace 40S"
-export GPU_REPLICA_COUNT=1
-export GPU_POOL=gpu-nodepool
-export GPU_NODE_VCPUS=20
-export GPU_NODE_CORES_PER_VCPU=1
-export GPU_NODE_MEMORY_GIB=40
-export GPU_NODE_DISK_SIZE_GIB=200
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Template .env</label><label for="__tabbed_13_2">Sample .env</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>export GPU_NAME=_name_of_gpu_device_
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>export GPU_REPLICA_COUNT=_no_of_gpu_worker_nodes
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>export GPU_POOL=_name_of_gpu_pool
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>export GPU_NODE_VCPUS=_no_of_gpu_node_vcpus
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>export GPU_NODE_CORES_PER_VCPU=_per_gpu_node_cores_per_vcpu
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>export GPU_NODE_MEMORY_GIB=_per_gpu_node_memory_gib
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>export GPU_NODE_DISK_SIZE_GIB=_per_gpu_node_memory_gib
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>export GPU_NAME=&quot;Lovelace 40S&quot;
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>export GPU_REPLICA_COUNT=1
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>export GPU_POOL=gpu-nodepool
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>export GPU_NODE_VCPUS=20
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>export GPU_NODE_CORES_PER_VCPU=1
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>export GPU_NODE_MEMORY_GIB=40
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>export GPU_NODE_DISK_SIZE_GIB=200
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Source the new variables and values to the environment</p>
-<p><code>bash
- source $HOME/nkp/.env</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/nkp/.env
+</span></code></pre></div>
 </li>
 <li>
 <p>Run the following command to create a GPU nodepool manifest</p>
-<p><code>bash
-nkp create nodepool nutanix \
-    --cluster-name ${NKP_CLUSTER_NAME} \
-    --prism-element-cluster ${NUTANIX_CLUSTER} \
-    --subnets ${NUTANIX_SUBNET_NAME} \
-    --vm-image ${NKP_IMAGE} \
-    --disk-size ${GPU_NODE_DISK_SIZE_GIB} \
-    --memory ${GPU_NODE_MEMORY_GIB} \
-    --vcpus ${GPU_NODE_VCPUS} \
-    --cores-per-vcpu ${GPU_NODE_CORES_PER_VCPU} \
-    --replicas ${GPU_REPLICA_COUNT} \
-    --wait \
-    ${GPU_POOL} --dry-run -o yaml &gt; gpu-nodepool.yaml</code></p>
-<p>!!! note</p>
-<pre><code>Right now there is no switch for GPU in ``nkp`` command. We need to do dry-run the output into a file and then add the necessary GPU specifications
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>nkp<span class="w"> </span>create<span class="w"> </span>nodepool<span class="w"> </span>nutanix<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="w">    </span>--cluster-name<span class="w"> </span><span class="si">${</span><span class="nv">NKP_CLUSTER_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="w">    </span>--prism-element-cluster<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_CLUSTER</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="w">    </span>--subnets<span class="w"> </span><span class="si">${</span><span class="nv">NUTANIX_SUBNET_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="w">    </span>--vm-image<span class="w"> </span><span class="si">${</span><span class="nv">NKP_IMAGE</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="w">    </span>--disk-size<span class="w"> </span><span class="si">${</span><span class="nv">GPU_NODE_DISK_SIZE_GIB</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-7"><a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="w">    </span>--memory<span class="w"> </span><span class="si">${</span><span class="nv">GPU_NODE_MEMORY_GIB</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-8"><a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a><span class="w">    </span>--vcpus<span class="w"> </span><span class="si">${</span><span class="nv">GPU_NODE_VCPUS</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-9"><a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a><span class="w">    </span>--cores-per-vcpu<span class="w"> </span><span class="si">${</span><span class="nv">GPU_NODE_CORES_PER_VCPU</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-10"><a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a><span class="w">    </span>--replicas<span class="w"> </span><span class="si">${</span><span class="nv">GPU_REPLICA_COUNT</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-11"><a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a><span class="w">    </span>--wait<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-44-12"><a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a><span class="w">    </span><span class="si">${</span><span class="nv">GPU_POOL</span><span class="si">}</span><span class="w"> </span>--dry-run<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>&gt;<span class="w"> </span>gpu-nodepool.yaml
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Right now there is no switch for GPU in <code>nkp</code> command. We need to do dry-run the output into a file and then add the necessary GPU specifications</p>
+</div>
 </li>
 <li>
 <p>Add the necessary gpu section to our new <code>gpu-nodepool.yaml</code> using <code>yq</code> command</p>
-<p><code>bash
-yq e '(.spec.topology.workers.machineDeployments[] | select(.name == "gpu-nodepool").variables.overrides[] | select(.name == "workerConfig").value.nutanix.machineDetails) += {"gpus": [{"type": "name", "name": strenv(GPU_NAME)}]}' -i gpu-nodepool.yaml</code></p>
-<p>??? success "Successful addtion of GPU specs?"</p>
-<pre><code>You would be able to see the added gpu section at the end of the ``gpu-nodepool.yaml`` file
-
-```yaml hl_lines="29"
-apiVersion: cluster.x-k8s.io/v1beta1
-kind: Cluster
-
-&lt;snip&gt;
-
-  name: gpu-nodepool
-  variables:
-    overrides:
-      - name: workerConfig
-        value:
-          nutanix:
-            machineDetails:
-              bootType: legacy
-              cluster:
-                name: romanticism
-                type: name
-              image:
-                name: nkp-ubuntu-24.04-1.29.6-20240718055804
-                type: name
-              memorySize: 40Gi
-              subnets:
-                - name: User1
-                  type: name
-              systemDiskSize: 200Gi
-              vcpuSockets: 16
-              vcpusPerSocket: 1
-              gpus:
-                - type: name
-                  name: Lovelace 40S
-```
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>yq<span class="w"> </span>e<span class="w"> </span><span class="s1">&#39;(.spec.topology.workers.machineDeployments[] | select(.name == &quot;gpu-nodepool&quot;).variables.overrides[] | select(.name == &quot;workerConfig&quot;).value.nutanix.machineDetails) += {&quot;gpus&quot;: [{&quot;type&quot;: &quot;name&quot;, &quot;name&quot;: strenv(GPU_NAME)}]}&#39;</span><span class="w"> </span>-i<span class="w"> </span>gpu-nodepool.yaml
+</span></code></pre></div>
+<details class="success">
+<summary>Successful addtion of GPU specs?</summary>
+<p>You would be able to see the added gpu section at the end of the <code>gpu-nodepool.yaml</code> file</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cluster.x-k8s.io/v1beta1</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cluster</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="l l-Scalar l-Scalar-Plain">&lt;snip&gt;</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>
+</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpu-nodepool</span>
+</span><span id="__span-46-7"><a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">variables</span><span class="p p-Indicator">:</span>
+</span><span id="__span-46-8"><a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a><span class="w">    </span><span class="nt">overrides</span><span class="p">:</span>
+</span><span id="__span-46-9"><a id="__codelineno-46-9" name="__codelineno-46-9" href="#__codelineno-46-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">workerConfig</span>
+</span><span id="__span-46-10"><a id="__codelineno-46-10" name="__codelineno-46-10" href="#__codelineno-46-10"></a><span class="w">        </span><span class="nt">value</span><span class="p">:</span>
+</span><span id="__span-46-11"><a id="__codelineno-46-11" name="__codelineno-46-11" href="#__codelineno-46-11"></a><span class="w">          </span><span class="nt">nutanix</span><span class="p">:</span>
+</span><span id="__span-46-12"><a id="__codelineno-46-12" name="__codelineno-46-12" href="#__codelineno-46-12"></a><span class="w">            </span><span class="nt">machineDetails</span><span class="p">:</span>
+</span><span id="__span-46-13"><a id="__codelineno-46-13" name="__codelineno-46-13" href="#__codelineno-46-13"></a><span class="w">              </span><span class="nt">bootType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">legacy</span>
+</span><span id="__span-46-14"><a id="__codelineno-46-14" name="__codelineno-46-14" href="#__codelineno-46-14"></a><span class="w">              </span><span class="nt">cluster</span><span class="p">:</span>
+</span><span id="__span-46-15"><a id="__codelineno-46-15" name="__codelineno-46-15" href="#__codelineno-46-15"></a><span class="w">                </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">romanticism</span>
+</span><span id="__span-46-16"><a id="__codelineno-46-16" name="__codelineno-46-16" href="#__codelineno-46-16"></a><span class="w">                </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">name</span>
+</span><span id="__span-46-17"><a id="__codelineno-46-17" name="__codelineno-46-17" href="#__codelineno-46-17"></a><span class="w">              </span><span class="nt">image</span><span class="p">:</span>
+</span><span id="__span-46-18"><a id="__codelineno-46-18" name="__codelineno-46-18" href="#__codelineno-46-18"></a><span class="w">                </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nkp-ubuntu-24.04-1.29.6-20240718055804</span>
+</span><span id="__span-46-19"><a id="__codelineno-46-19" name="__codelineno-46-19" href="#__codelineno-46-19"></a><span class="w">                </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">name</span>
+</span><span id="__span-46-20"><a id="__codelineno-46-20" name="__codelineno-46-20" href="#__codelineno-46-20"></a><span class="w">              </span><span class="nt">memorySize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40Gi</span>
+</span><span id="__span-46-21"><a id="__codelineno-46-21" name="__codelineno-46-21" href="#__codelineno-46-21"></a><span class="w">              </span><span class="nt">subnets</span><span class="p">:</span>
+</span><span id="__span-46-22"><a id="__codelineno-46-22" name="__codelineno-46-22" href="#__codelineno-46-22"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">User1</span>
+</span><span id="__span-46-23"><a id="__codelineno-46-23" name="__codelineno-46-23" href="#__codelineno-46-23"></a><span class="w">                  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">name</span>
+</span><span id="__span-46-24"><a id="__codelineno-46-24" name="__codelineno-46-24" href="#__codelineno-46-24"></a><span class="w">              </span><span class="nt">systemDiskSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">200Gi</span>
+</span><span id="__span-46-25"><a id="__codelineno-46-25" name="__codelineno-46-25" href="#__codelineno-46-25"></a><span class="w">              </span><span class="nt">vcpuSockets</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">16</span>
+</span><span id="__span-46-26"><a id="__codelineno-46-26" name="__codelineno-46-26" href="#__codelineno-46-26"></a><span class="w">              </span><span class="nt">vcpusPerSocket</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</span><span id="__span-46-27"><a id="__codelineno-46-27" name="__codelineno-46-27" href="#__codelineno-46-27"></a><span class="w">              </span><span class="nt">gpus</span><span class="p">:</span>
+</span><span id="__span-46-28"><a id="__codelineno-46-28" name="__codelineno-46-28" href="#__codelineno-46-28"></a><span class="w">                </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">name</span>
+</span><span id="__span-46-29"><a id="__codelineno-46-29" name="__codelineno-46-29" href="#__codelineno-46-29"></a><span class="hll"><span class="w">                  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lovelace 40S</span>
+</span></span></code></pre></div>
+</details>
 </li>
 <li>
 <p>Monitor Cluster-Api resources (on a different shell) to ensure gpu machine will be successfully created</p>
-<p><code>bash
-watch kubectl get cluster-api</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>watch<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>cluster-api
+</span></code></pre></div>
 </li>
 <li>
 <p>Apply the <code>gpu-nodepool.yaml</code> file to the workload cluster</p>
-<p><code>bash
-kubectl apply -f gpu-nodepool.yaml</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>gpu-nodepool.yaml
+</span></code></pre></div>
 </li>
 <li>
 <p>Monitor the progress of the command and check Prism Central events for creation of the GPU worker node</p>
 </li>
 <li>
 <p>Check nodes status in workload <code>nkpdev</code> cluster and note the gpu worker node</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-kubectl get nodes -w
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```bash hl_lines="5"
-$ kubectl get nodes
-
-#
-NAME                                    STATUS   ROLES           AGE   VERSION
-nkpdev-gpu-nodepool-66f5p-jvzct-5nd6c    Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-khgxl-gs8dz                      Ready    control-plane   24h   v1.34.1
-nkpdev-khgxl-nrkn6                      Ready    control-plane   24h   v1.34.1
-nkpdev-khgxl-qmnq8                      Ready    control-plane   24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-5m9td           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-ghrtp           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-hl2cw           Ready    &lt;none&gt;          24h   v1.34.1
-nkpdev-md-0-tnx7k-wcbsf-xrz9v           Ready    &lt;none&gt;          24h   v1.34.1
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Command</label><label for="__tabbed_14_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>nodes<span class="w"> </span>-w
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>$<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="c1">#</span>
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a>NAME<span class="w">                                    </span>STATUS<span class="w">   </span>ROLES<span class="w">           </span>AGE<span class="w">   </span>VERSION
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a><span class="hll">nkpdev-gpu-nodepool-66f5p-jvzct-5nd6c<span class="w">    </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span></span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a>nkpdev-khgxl-gs8dz<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-7"><a id="__codelineno-50-7" name="__codelineno-50-7" href="#__codelineno-50-7"></a>nkpdev-khgxl-nrkn6<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-8"><a id="__codelineno-50-8" name="__codelineno-50-8" href="#__codelineno-50-8"></a>nkpdev-khgxl-qmnq8<span class="w">                      </span>Ready<span class="w">    </span>control-plane<span class="w">   </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-9"><a id="__codelineno-50-9" name="__codelineno-50-9" href="#__codelineno-50-9"></a>nkpdev-md-0-tnx7k-wcbsf-5m9td<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-10"><a id="__codelineno-50-10" name="__codelineno-50-10" href="#__codelineno-50-10"></a>nkpdev-md-0-tnx7k-wcbsf-ghrtp<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-11"><a id="__codelineno-50-11" name="__codelineno-50-11" href="#__codelineno-50-11"></a>nkpdev-md-0-tnx7k-wcbsf-hl2cw<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span><span id="__span-50-12"><a id="__codelineno-50-12" name="__codelineno-50-12" href="#__codelineno-50-12"></a>nkpdev-md-0-tnx7k-wcbsf-xrz9v<span class="w">           </span>Ready<span class="w">    </span>&lt;none&gt;<span class="w">          </span>24h<span class="w">   </span>v1.34.1
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <h3 id="enable-gpu-operator">Enable GPU Operator</h3>
@@ -1961,9 +2107,9 @@ nkpdev-md-0-tnx7k-wcbsf-xrz9v           Ready    &lt;none&gt;          24h   v1.
 <li>Click on <strong>Configuration</strong> tab</li>
 <li>
 <p>Click on <strong>Workspace Application Configuration Override</strong> and paste the following yaml content</p>
-<p><code>yaml
-driver:
-  enabled: true</code></p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="nt">driver</span><span class="p">:</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></code></pre></div>
 <p>As shown here:</p>
 <p><img alt="alt text" src="images/gpu-operator-enable.png" /></p>
 </li>
@@ -1972,74 +2118,79 @@ driver:
 </li>
 <li>
 <p>Check GPU operator resources and make sure they are running</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-kubectl get po -A | grep -i nvidia
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text, no-copy}
-kubectl get po -A | grep -i nvidia
-
-nvidia-container-toolkit-daemonset-fjzbt                          1/1     Running     0          28m
-nvidia-cuda-validator-f5dpt                                       0/1     Completed   0          26m
-nvidia-dcgm-exporter-9f77d                                        1/1     Running     0          28m
-nvidia-dcgm-szqnx                                                 1/1     Running     0          28m
-nvidia-device-plugin-daemonset-gzpdq                              1/1     Running     0          28m
-nvidia-driver-daemonset-dzf55                                     1/1     Running     0          28m
-nvidia-operator-validator-w48ms                                   1/1     Running     0          28m
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Command</label><label for="__tabbed_15_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>po<span class="w"> </span>-A<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>nvidia
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>kubectl get po -A | grep -i nvidia
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>nvidia-container-toolkit-daemonset-fjzbt                          1/1     Running     0          28m
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>nvidia-cuda-validator-f5dpt                                       0/1     Completed   0          26m
+</span><span id="__span-53-5"><a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>nvidia-dcgm-exporter-9f77d                                        1/1     Running     0          28m
+</span><span id="__span-53-6"><a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>nvidia-dcgm-szqnx                                                 1/1     Running     0          28m
+</span><span id="__span-53-7"><a id="__codelineno-53-7" name="__codelineno-53-7" href="#__codelineno-53-7"></a>nvidia-device-plugin-daemonset-gzpdq                              1/1     Running     0          28m
+</span><span id="__span-53-8"><a id="__codelineno-53-8" name="__codelineno-53-8" href="#__codelineno-53-8"></a>nvidia-driver-daemonset-dzf55                                     1/1     Running     0          28m
+</span><span id="__span-53-9"><a id="__codelineno-53-9" name="__codelineno-53-9" href="#__codelineno-53-9"></a>nvidia-operator-validator-w48ms                                   1/1     Running     0          28m
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Run a sample GPU workload to confirm GPU operations</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-kubectl apply -f - &lt;&lt;EOF
-apiVersion: v1
-kind: Pod
-metadata:
-  name: cuda-vector-add
-spec:
-  restartPolicy: OnFailure
-  containers:
-  - name: cuda-vector-add
-    image: k8s.gcr.io/cuda-vector-add:v0.1
-    resources:
-      limits:
-        nvidia.com/gpu: 1
-EOF
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text, no-copy}
-pod/cuda-vector-add created
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">Command</label><label for="__tabbed_16_2">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a><span class="s">apiVersion: v1</span>
+</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="s">kind: Pod</span>
+</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a><span class="s">metadata:</span>
+</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="s">  name: cuda-vector-add</span>
+</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="s">spec:</span>
+</span><span id="__span-54-7"><a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a><span class="s">  restartPolicy: OnFailure</span>
+</span><span id="__span-54-8"><a id="__codelineno-54-8" name="__codelineno-54-8" href="#__codelineno-54-8"></a><span class="s">  containers:</span>
+</span><span id="__span-54-9"><a id="__codelineno-54-9" name="__codelineno-54-9" href="#__codelineno-54-9"></a><span class="s">  - name: cuda-vector-add</span>
+</span><span id="__span-54-10"><a id="__codelineno-54-10" name="__codelineno-54-10" href="#__codelineno-54-10"></a><span class="s">    image: k8s.gcr.io/cuda-vector-add:v0.1</span>
+</span><span id="__span-54-11"><a id="__codelineno-54-11" name="__codelineno-54-11" href="#__codelineno-54-11"></a><span class="s">    resources:</span>
+</span><span id="__span-54-12"><a id="__codelineno-54-12" name="__codelineno-54-12" href="#__codelineno-54-12"></a><span class="s">      limits:</span>
+</span><span id="__span-54-13"><a id="__codelineno-54-13" name="__codelineno-54-13" href="#__codelineno-54-13"></a><span class="s">        nvidia.com/gpu: 1</span>
+</span><span id="__span-54-14"><a id="__codelineno-54-14" name="__codelineno-54-14" href="#__codelineno-54-14"></a><span class="s">EOF</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>pod/cuda-vector-add created
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 <li>
 <p>Follow the logs to check if the GPU operations are successful</p>
-<p>=== "Command"</p>
-<pre><code>```bash
-kubectl logs _gpu_worload_pod_name
-```
-</code></pre>
-<p>=== "Sample Command"</p>
-<pre><code>```bash
-kubectl logs cuda-vector-add-xxx
-```
-</code></pre>
-<p>=== "Command Output"</p>
-<pre><code>```{ .text, no-copy}
-kubectl logs cuda-vector-add
-[Vector addition of 50000 elements]
-Copy input data from the host memory to the CUDA device
-CUDA kernel launch with 196 blocks of 256 threads
-Copy output data from the CUDA device to the host memory
-Test PASSED
-Done
-```
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:3"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><input id="__tabbed_17_3" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">Command</label><label for="__tabbed_17_2">Sample Command</label><label for="__tabbed_17_3">Command Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>kubectl<span class="w"> </span>logs<span class="w"> </span>_gpu_worload_pod_name
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>kubectl<span class="w"> </span>logs<span class="w"> </span>cuda-vector-add-xxx
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>kubectl logs cuda-vector-add
+</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>[Vector addition of 50000 elements]
+</span><span id="__span-58-3"><a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a>Copy input data from the host memory to the CUDA device
+</span><span id="__span-58-4"><a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>CUDA kernel launch with 196 blocks of 256 threads
+</span><span id="__span-58-5"><a id="__codelineno-58-5" name="__codelineno-58-5" href="#__codelineno-58-5"></a>Copy output data from the CUDA device to the host memory
+</span><span id="__span-58-6"><a id="__codelineno-58-6" name="__codelineno-58-6" href="#__codelineno-58-6"></a>Test PASSED
+</span><span id="__span-58-7"><a id="__codelineno-58-7" name="__codelineno-58-7" href="#__codelineno-58-7"></a>Done
+</span></code></pre></div>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <p>Now we are ready to deploy our AI workloads.</p>
@@ -2084,6 +2235,46 @@ Done
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../docs-hub-setup/phase1/" class="md-footer__link md-footer__link--next" aria-label="Next: Phase 1 - Hub">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Phase 1 - Hub
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -2105,11 +2296,13 @@ Done
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
     
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.integrate\u00e5\u00df", "search.highlight", "search.suggest", "search.share", "toc.follow", "announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.annotate", "content.code.select"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.af6d90d5.min.js"></script>

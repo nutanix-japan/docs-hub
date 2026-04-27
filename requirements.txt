@@ -1,4 +1,5 @@
 mkdocs-materialx[imaging]
+mkdocs-multirepo-plugin
 mike
 mkdocs-git-authors-plugin
 mkdocs-git-revision-date-localized-plugin

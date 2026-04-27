@@ -1,22 +1,35 @@
 site_name: Company Docs Hub
 site_url: https://github.com/nutanix-japan/docs-hub
 
+# 
+
 theme:
   name: materialx
   features:
     - navigation.tabs
     - navigation.top
+  
+#
 
 plugins:
   - search
   - multirepo:
       cleanup: true
+      nav_repos:
+        - name: nkp
+          import_url: "https://github.com/ariesbabu/team-nkp?branch=main"
+          imports:
+            - docs/*
+            - mkdocs.yml
+#
 
 nav:
   - Home: index.md
+  - NKP: "!import https://github.com/ariesbabu/team-nkp?branch=main"
   - Hub and Spoke Setup:
     - Phase 1 - Hub: docs-hub-setup/phase1.md
     - Phase 2 - Hub: docs-hub-setup/phase2.md
+    - Phase 2 - Spoke: docs-hub-setup/phase3.md
 
 extra:
   version:

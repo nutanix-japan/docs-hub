@@ -1,0 +1,41 @@
+name: Deploy Docs Hub
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      team:
+        description: "Team section (e.g. NKP, NC2)"
+        required: true
+        default: "all"
+      version:
+        description: "Version to deploy (e.g. v1.0) or 'latest'"
+        required: true
+        default: "latest"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install mkdocs-material mkdocs-multirepo-plugin mike
+
+      - name: Configure git for mike
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy hub
+        run: mkdocs gh-deploy --force
